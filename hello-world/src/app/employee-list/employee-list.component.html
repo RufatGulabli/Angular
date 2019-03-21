@@ -1,0 +1,14 @@
+<div class="container m-2">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-group shadow">
+        <li *ngFor="let emp of employeeList" class="list-group-item shadow">
+          {{ emp.name }}
+        </li>
+      </ul>
+      <div *ngIf="errorMsg" class="alert alert-danger">
+        {{ errorMsg }}
+      </div>
+    </div>
+  </div>
+</div>
